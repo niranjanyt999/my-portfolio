@@ -4,7 +4,7 @@ This repository contains the source code for my **Personal Portfolio Website**. 
 
 ## 🚀 Live Preview
 
-🌍 [Visit Portfolio](https://niranjanyt999.github.io/web-development-project/)
+🌍 [Visit Portfolio](https://niranjanyt999.live/)
 
 ---
 
