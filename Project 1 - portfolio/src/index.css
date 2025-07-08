@@ -1,0 +1,98 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 11% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 210 11% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 210 11% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 11% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 11% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 210 11% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 11% 15%;
+    --input: 210 11% 15%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 11% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 11% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 210 11% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .tech-grid {
+    background-image: 
+      linear-gradient(rgba(13, 110, 253, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(13, 110, 253, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.3);
+  }
+
+  .tech-blue {
+    color: hsl(217, 91%, 60%);
+  }
+
+  .tech-teal {
+    color: hsl(180, 100%, 40%);
+  }
+
+  .tech-dark {
+    background-color: hsl(210, 11%, 8%);
+  }
+
+  .tech-darker {
+    background-color: hsl(210, 11%, 6%);
+  }
+}
